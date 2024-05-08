@@ -1,0 +1,17 @@
+name: Update libs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup steamcmd
+        uses: CyberAndrii/setup-steamcmd@v1
+
+      - name: Update app
+        env:
+          USERNAME: ${{ secrets.STEAM_USERNAME }}
+          PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+        run: steamcmd +login "$USERNAME" "$PASSWORD" +app_update 1440670 validate +quit
