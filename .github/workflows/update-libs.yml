@@ -14,4 +14,4 @@ jobs:
         env:
           USERNAME: ${{ secrets.STEAM_USERNAME }}
           PASSWORD: ${{ secrets.STEAM_PASSWORD }}
-        run: steamcmd +login "$USERNAME" "$PASSWORD" +app_update 1440670 validate +quit
+        run: steamcmd +login anonymous +app_update 1440670 validate +quit
