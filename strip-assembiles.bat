@@ -1,6 +1,6 @@
 @echo off 
 
-set toPublicize=Assembly-CSharp.dll Assembly-CSharp-firstpass.dll Zeepkist.dll ZeepkistNetworking.dll UnityEngine.dll UnityEngine.IMGUIModule.dll UnityEngine.UI.dll UnityEngine.UIElementsModule.dll UnityEngine.UIElementsNativeModule.dll UnityEngine.UIModule.dll
+set toPublicize=Assembly-CSharp.dll Assembly-CSharp-firstpass.dll Zeepkist.dll ZeepkistNetworking.dll UnityEngine.dll UnityEngine.IMGUIModule.dll UnityEngine.UI.dll UnityEngine.UIElementsModule.dll UnityEngine.UIElementsNativeModule.dll UnityEngine.UIModule.dll Imui.dll
 
 set exePath=%1
 echo exePath: %exePath% 
